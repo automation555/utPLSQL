@@ -15,7 +15,7 @@ downloadFile() {
     printf %s "$downloadUrl" | xxd
     downloadUrl=${downloadUrl%$'\r'}
     echo "DownloadURL: $downloadUrl"
-    curl -o $3 \""${url}"\"
+    curl -o $3 "${DownloadURL}"
 }
 
 #############################
