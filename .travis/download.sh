@@ -12,7 +12,7 @@ PRODUCT=""
 # Then download the file using curl.
 downloadFile() {
     downloadUrl=$(exec casperjs download.js $ORACLE_OTN_USER $ORACLE_OTN_PASSWORD $1 $2)
-    printf %s "$URL" | xxd
+    printf %s "$downloadUrl" | xxd
     downloadUrl=${downloadUrl%$'\r'}
     echo "DownloadURL: $downloadUrl"
     curl -o $3 \""${url}"\"
