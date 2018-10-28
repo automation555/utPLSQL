@@ -13,7 +13,7 @@ PRODUCT=""
 downloadFile() {
     downloadUrl=$(exec casperjs download.js $ORACLE_OTN_USER $ORACLE_OTN_PASSWORD $1 $2)
     echo "DownloadURL: $downloadUrl"
-    curl -o $3 "${downloadUrl}"
+    curl -o $3 \""${downloadUrl}"\"
 }
 
 #############################
