@@ -1,0 +1,65 @@
+{
+    "gammaAccess": {
+        "url": "",
+        "token": ""
+    },
+    "repositories": [
+        {
+            "dataDir": "$WORKSPACE/data",
+            "repository": {
+                "uid": "7e92d75cb77faab5af7eb1846f9d4a12",
+                "projectName": "1sql",
+                "languages": [
+                    "SQL"
+                ],
+                "sources": {
+                    "baseDir": "$WORKSPACE",
+                    "exclusions": [
+                        "test"
+                    ]
+                }
+            },
+            "settings": {
+                "additionalOptions": [],
+                "includePaths": []
+            },
+            "modules": {
+                "codeissues": [
+                    {
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "sqlcheck",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ],
+                "relevance": [
+                    {
+                        "name": "relevance",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
